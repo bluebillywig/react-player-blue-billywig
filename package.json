@@ -1,0 +1,29 @@
+{
+	"name": "react-player-blue-billywig",
+	"version": "8.4.0",
+	"description": "ReactPlayerBlueBillywig, a React component for use with ReactPlayer",
+	"main": "build/index.js",
+	"files": [
+		"build/"
+	],
+	"scripts": {
+		"lint": "eslint src --ext .js",
+		"prepare": "parcel build src/ReactPlayerBlueBillywig.js"
+	},
+	"repository": "https://github.com/bluebillywig/react-player-blue-billywig",
+	"author": "Janroel Koppen",
+	"license": "UNLICENSED",
+	"devDependencies": {
+		"eslint": "^7.32.0",
+		"eslint-config-standard": "^16.0.2",
+		"eslint-config-semistandard": "^16.0.0",
+		"react": "^16.13.1",
+		"react-dom": "^16.13.1",
+		"react-test-renderer": "^16.13.1",
+		"parcel": "~2.5.0"
+	},
+	"dependencies": {
+                "react": "^16.13.1",
+		"react-fast-compare": "^3.0.1"
+	}
+}
