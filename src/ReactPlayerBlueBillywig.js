@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 
-const MATCH_URL_BLUEBILLYWIG = MATCH_URL_BLUEBILLYWIG = /^https?:\/\/[a-zA-Z0-9.-]+\.bbvms\.com\/p\/(\w+)\/([a-zA-Z]+)\/(\w+)\.json(\?|#|$)/
+const MATCH_URL_BLUEBILLYWIG = /^https?:\/\/[a-zA-Z0-9.-]+\.bbvms\.com\/p\/(\w+)\/([a-zA-Z]+)\/(\w+)\.json(\?|#|$)/
 
 const SDK_URL = 'https://cdn.bluebillywig.com/apps/player/latest/player.js'
 
