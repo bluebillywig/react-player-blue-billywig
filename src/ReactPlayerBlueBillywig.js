@@ -10,6 +10,17 @@ export default class BlueBillywig extends Component {
 
   componentDidMount () {
     this.props.onMount && this.props.onMount(this)
+
+    const { onLoaded, onError } = this.props
+    if (!globalThis.customElements?.get('bb-main-player')) {
+      try {
+        await import(/* webpackIgnore: true */ `${SDK_URL}`)
+        onLoaded()
+      } catch (error) {
+        onError(error)
+      }
+    }
+
     this.addListeners(this.player)
   }
 
