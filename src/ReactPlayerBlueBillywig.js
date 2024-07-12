@@ -4,6 +4,7 @@ const MATCH_URL_BLUEBILLYWIG = /^https?:\/\/[a-zA-Z0-9.-]+\.bbvms\.com\/p\/(\w+)
 
 const SDK_URL = 'https://cdn.bluebillywig.com/apps/player/latest/player.js'
 
+import(/* webpackIgnore: true */ `${SDK_URL}`)
 export default class BlueBillywig extends Component {
   static displayName = 'BlueBillywig'
   static canPlay = url => MATCH_URL_BLUEBILLYWIG.test(url)
