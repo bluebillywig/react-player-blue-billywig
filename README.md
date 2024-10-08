@@ -1,9 +1,8 @@
 # react-player-blue-billywig
 
-This GitHub-hosted NPM package provides an extension to ReactPlayer, enabling you to embed your Blue Billywig content (media clips, projects, playlists) in a React web app. 
-Here’s how.
+This GitHub-hosted NPM package extends ReactPlayer, enabling you to embed Blue Billywig content (media clips, projects, playlists) in a React web application.
 
-## Adding to your package.json
+## Add to package.json
 ```
         "dependencies": {
                 "react": "^18.0.0",
@@ -12,7 +11,7 @@ Here’s how.
         }
 ```
 
-## Importing and registering the extension
+## Import and Register the Extension
 ```
 import React from 'react';
 import ReactPlayer from 'react-player';
@@ -21,14 +20,13 @@ ReactPlayer.addCustomPlayer(ReactPlayerBlueBillywig);
 ```
 
 ## Embedding
-The javascript embed codes from our platform have a ‘src’ property that ends in “.js”. Simply turn that into “.json” and use it like so:
+Embed Blue Billywig content using the URL provided in the JavaScript embed codes from the Online Video Platform. Simply change the .js file extension to .json and use it like this:
 ```
 <ReactPlayer url="https://bluebillywig.bbvms.com/p/demo/c/5938172.json" playing controls />
 ```
 
 ## Troubleshooting
-If things don’t work out as expected, try first including 
+If the player doesn't load as expected, try including the following script in your HTML as a workaround:
 ```
 <script type="text/javascript" src="https://cdn.bluebillywig.com/apps/player/latest/player.js"></script>
 ```
-as a work-around.
