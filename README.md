@@ -7,7 +7,7 @@ This GitHub-hosted NPM package extends ReactPlayer, enabling you to embed Blue B
         "dependencies": {
                 "react": "^18.0.0",
                 "react-player": "^2.16.0",
-                "react-player-blue-billywig": "https://github.com/bluebillywig/react-player-blue-billywig"
+                "react-player-blue-billywig": "^8.17.0"
         }
 ```
 
