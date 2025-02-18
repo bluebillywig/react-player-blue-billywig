@@ -20,7 +20,7 @@ ReactPlayer.addCustomPlayer(ReactPlayerBlueBillywig);
 ```
 
 ## Embedding
-Embed Blue Billywig content using the URL provided in the JavaScript embed codes from the Online Video Platform. Simply change the .js file extension to .json and use it like this:
+Embed Blue Billywig content using the JSON embed code provided by the Online Video Platform's Preview page.
 ```
 <ReactPlayer url="https://bluebillywig.bbvms.com/p/demo/c/5938172.json" playing controls />
 ```
@@ -30,3 +30,19 @@ If the player doesn't load as expected, try including the following script in yo
 ```
 <script type="text/javascript" src="https://cdn.bluebillywig.com/apps/player/latest/player.js"></script>
 ```
+
+If you're using **React Router (v7)**, you may need to add a type declaration, for instance:
+```
+[missingtypes.d.ts]
+declare module 'react-player-blue-billywig'
+```
+Further, it may help to check existence of ReactPlayer.addCustomPlayer before calling it;
+```
+if (ReactPlayer.addCustomPlayer) ReactPlayer.addCustomPlayer(ReactPlayerBlueBillywig);
+```
+
+If you're using **Next.js (App Router)**, you may need to add 
+```
+'use client'
+```
+to the top of the file that contains your &lt;ReactPlayer&gt; tag.
